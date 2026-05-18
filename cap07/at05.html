@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWEB1 — Cap. 07 — AT05 — Mini Design System</title>
+    <link rel="stylesheet" href="at05-style.css">
+</head>
+
+<body>
+
+    <header>
+        <p><a href="../index.html"> Voltar para a página principal</a></p>
+    </header>
+
+    <section class="hero">
+        <h1 class="hero__titulo">AI Core UI</h1>
+        <p class="hero__subtitulo">Design system para agentes e sistemas autônomos</p>
+        <button class="hero__cta btn btn--primario">Gerar Token</button>
+    </section>
+
+    <main>
+
+        <section>
+            <h2>Ações do Modelo</h2>
+            <button class="btn btn--primario">Executar Prompt</button>
+            <button class="btn btn--secundario">Ajustar Parâmetros</button>
+            <button class="btn btn--perigo">Limpar Contexto</button>
+            <button class="btn btn--primario" disabled>Treinando...</button>
+        </section>
+
+        <section>
+            <h2>Componente de Visão</h2>
+
+            <article class="card">
+                <span class="card__badge">Neural</span>
+                <div class="card__imagem"></div>
+
+                <div class="card__corpo">
+                    <h3 class="card__titulo">Processamento Cognitivo</h3>
+                    <p class="card__texto">
+                        Análise semântica e extração de padrões em tempo real.
+                    </p>
+                    <a class="card__link" href="#">Ver documentação da API →</a>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <h2>Espectro de Ativação</h2>
+
+            <table>
+                <tr>
+                    <th>Camada Neural</th>
+                    <th>Status do Nó</th>
+                </tr>
+
+                <tr>
+                    <td>Ativação (ReLU)</td>
+                    <td style="background-color: #00f2ff;"></td>
+                </tr>
+
+                <tr>
+                    <td>Latência Amostral</td>
+                    <td style="background-color: #7000ff;"></td>
+                </tr>
+
+                <tr>
+                    <td>Atenção (Weights)</td>
+                    <td style="background-color: #ff007a;"></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Configuração de Treinamento</h2>
+
+            <form class="form">
+                <div class="form__grupo">
+                    <label class="form__label">Identificador do Modelo</label>
+                    <input class="form__input" type="text" required placeholder="Ex: GPT-4-Turbo">
+                </div>
+
+                <div class="form__grupo">
+                    <label class="form__label">Endpoint da API</label>
+                    <input class="form__input" type="url" required placeholder="https://api.ia.com/v1">
+                </div>
+
+                <div class="form__grupo">
+                    <label class="form__label">Chave de Acesso (Key)</label>
+                    <input class="form__input" type="password" required placeholder="sk-proj-...">
+                </div>
+
+                <div class="form__grupo">
+                    <label class="form__label">System Prompt</label>
+                    <input class="form__input" type="text" placeholder="Instruções de comportamento">
+                </div>
+
+                <button class="form__botao btn btn--primario">Iniciar Inferência</button>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
