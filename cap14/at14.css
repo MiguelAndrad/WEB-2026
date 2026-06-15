@@ -1,0 +1,230 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, main, footer {
+    width: 100%;
+    max-width: 800px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #7f8c8d;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+
+hr {
+    display: none;
+}
+
+
+#perfil {
+    text-align: center;
+}
+
+#fotoPerfil {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 200px;
+    border: 5px solid #3498db;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#nomePerfil {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+#matriculaPerfil, #cursoPerfil {
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+#biografiaPerfil {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+    text-align: justify;
+}
+
+
+label {
+    font-weight: 600;
+    color: #444444;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+select, input[type="email"], input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    outline: none;
+}
+
+select:focus, input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+
+input[type="range"] {
+    width: 80%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#valorFonte {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Checkbox alinhado */
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    vertical-align: middle;
+}
+
+/* Botões */
+button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+#estatisticas p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#contadorAcoes, #ultimaAcao {
+    color: #e74c3c;
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #95a5a6;
+    font-size: 0.9rem;
+}
+
+
+.perfil-destacado {
+    border: 3px dashed #e74c3c !important;
+    background-color: #fff9f9 !important;
+    box-shadow: 0 10px 25px rgba(231, 76, 60, 0.15) !important;
+    transform: scale(1.02);
+}
+
+body.tema-escuro {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+body.tema-escuro section {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+body.tema-escuro h1, body.tema-escuro h2, body.tema-escuro #nomePerfil {
+    color: #ffffff;
+}
+body.tema-escuro #biografiaPerfil {
+    background-color: #2a2a2a;
+    color: #dddddd;
+}
+body.tema-escuro select, body.tema-escuro input {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border-color: #444444;
+}
+body.tema-escuro label {
+    color: #bbbbbb;
+}
+
+
+body.tema-azul {
+    background-color: #e8f1f5;
+    color: #2c3e50;
+}
+body.tema-azul section {
+    background-color: #d4e6f1;
+    box-shadow: 0 4px 6px rgba(44, 62, 80, 0.1);
+}
+body.tema-azul h2 {
+    border-bottom-color: #a9cce3;
+}
+body.tema-azul #biografiaPerfil {
+    background-color: #ebf5fb;
+    border-left-color: #1f618d;
+}
+body.tema-azul button {
+    background-color: #2980b9;
+}
+body.tema-azul button:hover {
+    background-color: #1f618d;
+}
